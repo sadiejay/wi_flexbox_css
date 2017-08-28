@@ -24,7 +24,7 @@ header{
   grid-area: header;
   background: #999;
   color: black;
-  padding: 40px;
+  padding: 50px;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -56,7 +56,7 @@ main{
   grid-area:main;
   color:pink;
   padding: 20px;
-  background: #fff;
+  background: #000;
   line-height: 2.4;
 }
 
@@ -109,7 +109,7 @@ footer{
   grid-area: footer;
   background: black;
   color: white;
-  padding: 20px;
+  padding: 50px;
   font-weight: bold;
   font-size: 2rem;
 }
