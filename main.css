@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+.container{
+  display: grid;
+  backgound:white;
+  grid-template-columns:300px auto;
+  grid-template-areas: "header header"
+    "aside main"
+    "cats cats"
+    "footer footer";
+  font-family:Arial;
+}
+
+header{
+  grid-area: header;
+  background: #999;
+  color: black;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+aside{
+  grid-area:aside;
+  background: #efefef;
+  padding: 20px;
+}
+
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+
+}
+nav li{
+  flex: 1;
+  list-style-type: none;
+  font-size:1.15rem;
+  line-height: 1.4;
+  font-weight: bold;
+
+}
+
+main{
+  grid-area:main;
+  color:pink;
+  padding: 20px;
+  background: #666;
+  line-height: 1.4;
+}
+.cats{
+  grid-area:cats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-gap: 10px;
+}
+
+.card{
+  padding: 20px;
+  border: 2px grey solid;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+when the images come in:
+.card img{
+max-width: 100%;
+}
+
+*/
+
+button{
+  background: black;
+  width: 100%;
+  border: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform:uppercase;
+  font-size: .8rem;
+  align-self: flex-end;
+  margin-top: auto;
+
+}
+
+
+footer{
+  grid-area: footer;
+  background: black;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+}
