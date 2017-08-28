@@ -10,7 +10,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 .container{
   display: grid;
-  backgound:white;
+  background-color: #fff;
   grid-template-columns:300px auto;
   grid-template-areas: "header header"
     "aside main"
@@ -82,10 +82,11 @@ main{
 }
 
 .individual-card{
+  display: flex;
   flex: 1;
   flex-direction: column;
   padding: 20px;
-  border: 2px grey solid;
+  border: 2px #222 solid;
 }
 
 .card img{
@@ -95,19 +96,22 @@ main{
   text-align: center;
 }
 
-
+.read{
+  align-self: flex-end;
+  margin-top: auto;
+  width: 100%;
+}
 
 button{
   background: black;
   width: 100%;
   border: none;
   color: white;
+  padding: 10px;
   text-align: center;
   font-weight: bold;
   text-transform:uppercase;
   font-size: .8rem;
-  align-self: flex-end;
-  margin-top: auto;
 
 }
 
