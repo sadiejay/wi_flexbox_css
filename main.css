@@ -14,6 +14,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   grid-template-columns:300px auto;
   grid-template-areas: "header header"
     "aside main"
+    "grey grey"
     "cats cats"
     "footer footer";
   font-family:Arial;
@@ -23,13 +24,13 @@ header{
   grid-area: header;
   background: #999;
   color: black;
-  padding: 20px;
+  padding: 40px;
   font-weight: bold;
   font-size: 2rem;
 }
 
 aside{
-  grid-area:aside;
+  grid-area: aside;
   background: #efefef;
   padding: 20px;
 }
@@ -38,6 +39,7 @@ aside{
 nav ul{
   display: flex;
   flex-direction: column;
+  padding: 10px;
 
 }
 nav li{
@@ -46,6 +48,7 @@ nav li{
   font-size:1.15rem;
   line-height: 1.4;
   font-weight: bold;
+  padding: 5px;
 
 }
 
@@ -53,8 +56,15 @@ main{
   grid-area:main;
   color:pink;
   padding: 20px;
-  background: #666;
-  line-height: 1.4;
+  background: #fff;
+  line-height: 2.4;
+}
+
+.grey{
+  grid-area: grey;
+  background: #999;
+  padding: 80px;
+
 }
 .cats{
   grid-area:cats;
